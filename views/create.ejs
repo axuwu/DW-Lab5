@@ -1,0 +1,27 @@
+<html lang="en">
+  <%- include("./partials/head.ejs") %>
+
+  <body>
+    <%- include("./partials/nav.ejs") %>
+
+    <div class="create-disciplina content">
+      <form action="/disciplina" method="POST">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required />
+
+        <label for="professor">Professor:</label>
+        <input type="text" id="professor" name="professor" required />
+
+        <label for="ano">Ano:</label>
+        <input type="text" id="ano" name="ano" required />
+
+        <label for="curso">Curso:</label>
+        <input type="text" id="curso" name="curso" required />
+
+        <label for="descricao">Descrição:</label>
+        <textarea id="descricao" name="descricao" required></textarea>
+        <button>Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
